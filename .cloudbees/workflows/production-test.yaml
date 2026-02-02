@@ -10,6 +10,6 @@ jobs:
     steps:
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
-          labels: ProdEnv
+          labels: aspm-qa-env
           artifact-id: e8679b45-968c-4127-869b-55222fe38ddf
-          target-environment: ProdEnv
+          target-environment: aspm-qa-env
