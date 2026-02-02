@@ -1,6 +1,6 @@
 apiVersion: automation.cloudbees.io/v1alpha1
 kind: workflow
-name: Production SLA
+name: Production
 on:
   push:
     branches:
@@ -10,6 +10,6 @@ jobs:
     steps:
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
-          labels: aspm-qa-env
-          artifact-id: e8679b45-968c-4127-869b-55222fe38ddf
-          target-environment: aspm-qa-env
+          labels: QA1
+          artifact-id: 54762bc1-e872-41f9-bf09-c6a64ae3cb33
+          target-environment: QA
